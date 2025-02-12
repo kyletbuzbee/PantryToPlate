@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+input, button {
+  display: block;
+  margin: 10px 0;
+}
+
+#recipesContainer div {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#authContainer {
+  margin-top: 20px;
+}
+
+html,
+:host {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Custom scrollbar for WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Define the animation */
+@keyframes fadeBackground {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation */
+#animatedElement {
+  background-color: blue; /* Initial background color */
+  animation: fadeBackground 2s linear infinite;
+}
+
+/* Define the animation */
+@keyframes optimizedAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+/* Apply the animation */
+#animatedElement {
+  will-change: transform;
+  animation: optimizedAnimation 2s linear infinite;
+}

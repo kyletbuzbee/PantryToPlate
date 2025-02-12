@@ -1,0 +1,22 @@
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-navigation a {
+  text-decoration: none;
+  color: #000;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingredient-Based Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #343a40;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #recipesContainer {
+      margin-top: 20px;
+    }
+    .recipe {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+    .recipe img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    .loading, .error {
+      text-align: center;
+      color: #007bff;
+      font-weight: bold;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🥘 Ingredient-Based Recipe Finder</h1>
+    <div class="form-group">
+      <label for="ingredientsInput">Enter the ingredients you have (separated by commas):</label>
+      <input type="text" id="ingredientsInput" placeholder="e.g., chicken, rice, broccoli">
+    </div>
+    <div class="form-group">
+      <label for="excludeIngredientsInput">Exclude ingredients (separated by commas):</label>
+      <input type="text" id="excludeIngredientsInput" placeholder="e.g., nuts, dairy">
+    </div>
+    <div class="form-group">
+      <label>Select dietary preferences:</label>
+      <label><input type="checkbox" id="vegan"> Vegan</label>
+      <label><input type="checkbox" id="vegetarian"> Vegetarian</label>
+      <label><input type="checkbox" id="glutenFree"> Gluten-Free</label>
+    </div>
+    <div class="form-group">
+      <label for="maxTimeInput">Max cooking time (minutes):</label>
+      <input type="number" id="maxTimeInput" placeholder="e.g., 30">
+    </div>
+    <button id="findRecipesBtn" type="button">Find Recipes</button>
+    <div id="recipesContainer"></div>
+    <div id="loadingIndicator" class="loading" style="display:none;">Loading...</div>
+    <div id="errorMessage" class="error" style="display:none;">An error occurred. Please try again.</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
