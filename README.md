@@ -2,14 +2,6 @@
 
 PantryToPlate is a web application that helps users create recipes based on the ingredients they have in their pantry. Simply input what you have, and PantryToPlate will suggest delicious recipes you can make!
 
-## Project Details
-- **Project ID:** pantrytoplate-f153b
-- **Project Number:** 311456878697
-- **Web API Key:** AIzaSyAPsC1YQWEGfa5M6gtS78SAMSQSp0h0OzE
-- **Environment:** Production
-- **Public-facing Name:** PantryToPlate
-- **Support Email:** kyle.thomas.buzbee@gmail.com
-
 ## Features
 - Input ingredients to find matching recipes.
 - Exclude specific ingredients from recipes.
