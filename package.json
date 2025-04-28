@@ -39,7 +39,7 @@
     "babel-eslint": "^10.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
-    "eslint": "^7.26.0",
+    "eslint": "^9.25.1",
     "jest": "^27.0.0",
     "nodemon": "^2.0.7",
     "supertest": "^6.1.3",
